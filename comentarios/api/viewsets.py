@@ -3,6 +3,6 @@ from .serializers import ComentarioSerializer
 from comentarios.models import Comentario
 
 
-class ComentariosViewSet(ModelViewSet):
+class ComentarioViewSet(ModelViewSet):
     queryset = Comentario.objects.all()
     serializer_class = ComentarioSerializer
